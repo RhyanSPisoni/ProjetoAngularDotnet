@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="UserPg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="user.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div ng-controller="UserCtrl">
+        <div class="jumbotron">
+            <h1>Cadastro de Usuários</h1>
+            <h1 ng-init="BuscaUsuarios()"></h1>
+            <div>
+                <input maxlength="4" class="form-control-sm" type="text" ng-disabled="true" ng-model="codigo"
+                    placeholder="Código" id="id_codigo">
+                <input maxlength="50" class="form-control-sm" type="text" ng-model="nome" required placeholder="Nome"
+                    id="id_nome">
+                <input maxlength="11" class="form-control-sm" type="number" ng-model="cpf" required placeholder="CPF"
+                    id="id_cpf">
+                <input maxlength="50" class="form-control-sm" type="text" ng-model="endereco" placeholder="Endereço"
+                    id="id_endereco">
+                <input maxlength="11" class="form-control-sm" type="number" ng-model="telefone" placeholder="Telefone"
+                    id="id_telefone">
+                <button class="btn btn-outline-success" ng-disabled="!nome || !cpf"
+                    ng-click="NovoUsuario(nome, cpf, endereco, telefone)">Confirmar</button>
+
+                <button ng-click="LimparCamposUserNg()" class="btn btn-outline-warning">Limpar</button>
+            </div>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>Código</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Telefone</th>
+                </tr>
+                <tr ng-repeat=" dado in dadosApi">
+                    <td>{{dado.codigo}}</td>
+                    <td>{{dado.nome}}</td>
+                    <td>{{dado.cpf}}</td>
+                    <td>{{dado.endereco}}</td>
+                    <td>{{dado.telefone}}</td>
+                    <td>
+                        <button class="btn btn-outline-secondary" ng-click="EditarUsuario(dado)">Editar</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-outline-danger" ng-click="DeletarUsuario(dado.codigo)">Excluir</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

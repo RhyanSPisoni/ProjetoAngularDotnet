@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="LoginPg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="login.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="jumbotron" ng-controller="LoginCtrl">
+        <h1>Login de Usuário</h1>
+        <div class="cont">
+            <input type="text" ng-model="user" placeholder="Usuário">
+            <input type="text" ng-model="pass" placeholder="Senha">
+            <button type="button" class="btn btn-primary" ng-click="VerificaLogin(user, pass)">Confirmar</button>
+        </div>
+    </div>
+</body>
+
+</html>
