@@ -4108,11 +4108,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Github\\angular_donet\\server\\server.csproj",
+      "projectUniqueName": "f:\\Github\\ProjetoAngularDotnet\\server\\server.csproj",
       "projectName": "server",
-      "projectPath": "F:\\Github\\angular_donet\\server\\server.csproj",
+      "projectPath": "f:\\Github\\ProjetoAngularDotnet\\server\\server.csproj",
       "packagesPath": "C:\\Users\\rhyan\\.nuget\\packages\\",
-      "outputPath": "F:\\Github\\angular_donet\\server\\obj\\",
+      "outputPath": "f:\\Github\\ProjetoAngularDotnet\\server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rhyan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u6gfqdrZkdgyzf6XesJl7wwkoq2z/m4uZUQOV6EPTJXya0N96zMf9H4eYsZd1XtvCormFKRwZ5lFmaev10eGhQ==",
+  "dgSpecHash": "2HmmsukEQ9hmJEx4Wf6/H/qDcT3vNrG6sfe9VU8dY+gvgWuZnvRFUdEJkquEltg6qipMQ4M4hovLFlMcH39nRw==",
   "success": true,
-  "projectFilePath": "F:\\Github\\angular_donet\\server\\server.csproj",
+  "projectFilePath": "f:\\Github\\ProjetoAngularDotnet\\server\\server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rhyan\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\rhyan\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
